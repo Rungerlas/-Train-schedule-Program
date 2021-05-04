@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffcc">  
+   
+   <FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@drawable/title"
+   >
+    <TextView
+    	android:text="列车查询系统"
+    	android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="0dip"
+		android:layout_marginBottom="0dip"
+		android:layout_marginLeft="0dip"
+		android:textSize="20dip"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:gravity="center"
+    >
+    </TextView> 
+   </FrameLayout>
+  <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="15dip"
+    	android:layout_marginRight="15dip"
+    	android:layout_marginTop="4dip"
+    	android:layout_marginBottom="4dip"
+    	android:gravity="center"
+    	android:background="@drawable/navigator"
+    >
+    <TextView
+    	android:text="附加功能" 
+    	android:gravity="center"
+    	android:textSize="18dip"
+    	android:layout_width="100dip" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dip"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold">
+	</TextView>
+    <TextView
+    	android:text="关系添加" 
+    	android:gravity="center"
+    	android:textSize="18dip"
+    	android:layout_width="100dip" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dip"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:background="@drawable/hilight">
+	</TextView>
+	
+    </LinearLayout>
+   
+   <LinearLayout
+   	android:orientation="horizontal"
+   	android:layout_width="fill_parent"
+   	android:layout_height="fill_parent">
+
+       <LinearLayout
+		   android:layout_width="496dp"
+		   android:layout_height="fill_parent"
+		   android:layout_gravity="center_vertical"
+		   android:layout_marginBottom="10dip"
+		   android:layout_marginLeft="15dip"
+		   android:layout_marginRight="15dip"
+		   android:layout_marginTop="10dip"
+		   android:layout_weight="2"
+		   android:background="#ffcc66"
+		   android:orientation="vertical">
+
+		   <LinearLayout
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_gravity="bottom"
+			   android:orientation="horizontal">
+
+
+			   <TextView
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:layout_marginLeft="20dip"
+				   android:layout_marginTop="10dip"
+				   android:text="车       次:"
+				   android:textColor="#222222"
+				   android:textSize="18dip"></TextView>
+
+			   <EditText
+				   android:id="@+id/et_gxtj_cm"
+				   android:layout_width="120dip"
+				   android:layout_height="38dip"
+				   android:layout_marginRight="10dip"
+				   android:layout_marginTop="10dip"
+				   android:text="4444"></EditText>
+		   </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dip"
+                   android:layout_marginTop="5dip"
+                   android:text="站       名:"
+                   android:textColor="#222222"
+                   android:textSize="18dip"></TextView>
+
+               <AutoCompleteTextView
+                   android:id="@+id/et_gxtj_zm"
+                   android:layout_width="120dip"
+                   android:layout_height="38dip"
+                   android:layout_marginTop="5dip"
+                   android:singleLine="true"
+                   android:text="常州"></AutoCompleteTextView>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:background="#ffcc66"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dip"
+                   android:layout_marginTop="5dip"
+                   android:text="到站时间:"
+                   android:textColor="#222222"
+                   android:textSize="18dip"></TextView>
+
+               <EditText
+                   android:id="@+id/et_gxtj_dzsj"
+                   android:layout_width="120dip"
+                   android:layout_height="38dip"
+                   android:layout_marginTop="5dip"
+                   android:text="3:00"></EditText>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom"
+               android:background="#ffcc66"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dip"
+                   android:layout_marginTop="5dip"
+                   android:text="开车时间:"
+                   android:textColor="#222222"
+                   android:textSize="18dip"></TextView>
+
+               <EditText
+                   android:id="@+id/et_gxtj_kcsj"
+                   android:layout_width="120dip"
+                   android:layout_height="38dip"
+                   android:layout_marginTop="5dip"
+                   android:text="4:00"></EditText>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_gravity="bottom"
+               android:background="#ffcc66"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/gxtj_tj"
+                   android:layout_width="60dip"
+                   android:layout_height="38dip"
+                   android:layout_marginLeft="50dip"
+                   android:layout_marginTop="10dip"
+                   android:text="添加">
+                   ></Button>
+
+               <Button
+                   android:id="@+id/gxtj_fh"
+                   android:layout_width="60dip"
+                   android:layout_height="38dip"
+                   android:layout_marginBottom="10dip"
+                   android:layout_marginLeft="30dip"
+                   android:layout_marginTop="10dip"
+                   android:text="返回"></Button>
+           </LinearLayout>
+       </LinearLayout>
+    
+    
+    <!--图片模块-->
+   </LinearLayout>
+</LinearLayout>
